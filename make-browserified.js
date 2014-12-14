@@ -7,5 +7,5 @@ var browserify = require('browserify')
 
 var b = browserify();
 
-b.require('./lib/ecma-nacl', { expose: 'ecma-nacl' });
-b.bundle().pipe(fs.createWriteStream(__dirname + '/ecma-nacl_browserified.js'));
+b.require('./lib/partial-nacl', { expose: 'partial-nacl' });
+b.bundle().pipe(fs.createWriteStream(__dirname + '/partial-nacl_browserified.js'));
